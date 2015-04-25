@@ -1,65 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
+<html><head>
+  
+  <meta charset="utf-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+
+  
+  <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+
+  
+  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+<!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>MiningChi</title>
-  </head>
+  <title>MiningChi</title>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+  
+</head><body>
+<div id="container">
+<div class="inner"> <header> </header>
+<h1>MiningChi</h1>
+<h2>Data Mining the Second City</h2>
+<hr> <section id="main_content"></section>
+<h3><a href="http://miningchi.github.io/tsne.html">Word2Vec Clustering
+of Seventh Circuit Court of Appeals</a></h3>
+<p>This page presents a clustering example of 40,000 cases from the Seventh Circuit Court of Appeals.
+It uses Word2Vec with Kmeans for the clustering analysis.  The results are then presented using Bokeh.
+The code is available as an iPython notebook at on my github repo.</p>
 
-        <header>
-          <h1>MiningChi</h1>
-          <h2>Data Mining the Second City</h2>
-        </header>
 
- 
-        <hr>
-        <section id="main_content">
-
+<br>
 <h3><a href="http://cdb.io/1zZtEVh">Accident Heat Map for Chicago</a></h3>
-<p>This page is an accident heat map for Chicago.  The map is colored by the crash rate for a street.  The streets in red are the more dangerous streets, while green has a reduced crash rate.  You can see the crash rate for a given segment by hovering on a street.  The crash rate takes into account the traffic volume for a street.</p>
-
-<h3><a href="https://miningchi2.shinyapps.io/redlight/">Accident Analysis for Chicago</a></h3>
-<p>This site allows you to analyze accidents in Chicago, with an emphasis on Chicago's red light cameras. The site provides accident data for any address in Chicago or accidents that occurred within a 100 feet of a red light camera between 2009 to 2012. The site also provides statistics on red light camera tickets for each intersection.  Information is presented in tables, plots, and a map.</p>
-
-<h3><a href="https://miningchi2.shinyapps.io/chicrime/">Chicago Crime Data Visualization</a></h3>
-<p>This site allows you to visualize and analyze Chicago's crime statistics. You can look at the information on crimes, visualize it on a map, heat maps, descriptive statistics, trend analysis, and even see the relationship between weather and crime.</p>
-
-<h3><a href="http://eyeingchicago.com/red-light-camera-study/">Red Light Camera Study-2014</a></h3>
-<p>Chicago leads the nation with over 380 red light cameras (RLCs) at 190 intersections.  Four years ago, a short study threw doubt on the city’s claims of significant accident reductions because of red light cameras. This page contains the follow-up study that looks at accident data and ticket data between 2009 and 2012.  It finds there is no evidence of a significant safety benefit from the red light cameras.</p>
-
-<h3><a href="http://www.rajivshah.com/ShahChicagoCameras.pdf">Effectiveness of the Chicago Camera Network on Crime</a></h3>
-<p>This paper found the initial crime level of an area where a camera was placed had a significant effect. In areas with high crime, cameras were very effective in reducing crime. In other areas, the cameras had little effect in reducing crime. This exploratory research suggests fewer cameras in crime hotspots are much more effective than a wide diffuse camera dragnet.</p>
-
-<h3><a href="http://eyeingchicago.com/blog/2010/8/1/effectiveness-of-red-light-cameras-in-chicago-an-exploratory.html">Red Light Camera Study-2010</a></h3>
-<p>This report conducted an analysis on the effectiveness of red light camera using data obtained from the city of Chicago and the Illinois Department of Transportation (IDOT).  We found accidents in Chicago fell between 2001 and 2008. In contrast, accidents at intersections with RLCs in our study actually increased. This result throws doubt on the city’s claims of significant accident reductions because of RLCs.  Additionally, the data also shows that the share of accidents at traffic signals has stayed roughly constant. This suggests red light cameras are not reducing accidents throughout the city.</p>
-
-    <hr>
+<p>This page is an accident heat map for Chicago. The map is colored by
+the crash rate for a street. The streets in red are the more dangerous
+streets, while green has a reduced crash rate. You can see the crash
+rate for a given segment by hovering on a street. The crash rate takes
+into account the traffic volume for a street.</p>
+<h3><a href="https://miningchi2.shinyapps.io/redlight/">Accident
+Analysis for Chicago</a></h3>
+<p>This site allows you to analyze accidents in Chicago, with an
+emphasis on Chicago's red light cameras. The site provides accident
+data for any address in Chicago or accidents that occurred within a 100
+feet of a red light camera between 2009 to 2012. The site also provides
+statistics on red light camera tickets for each intersection.
+Information is presented in tables, plots, and a map.</p>
+<h3><a href="https://miningchi2.shinyapps.io/chicrime/">Chicago Crime
+Data Visualization</a></h3>
+<p>This site allows you to visualize and analyze Chicago's crime
+statistics. You can look at the information on crimes, visualize it on
+a map, heat maps, descriptive statistics, trend analysis, and even see
+the relationship between weather and crime.</p>
+<h3><a href="http://eyeingchicago.com/red-light-camera-study/">Red
+Light Camera Study-2014</a></h3>
+<p>Chicago leads the nation with over 380 red light cameras (RLCs) at
+190 intersections. Four years ago, a short study threw doubt on the
+city’s claims of significant accident reductions because of red light
+cameras. This page contains the follow-up study that looks at accident
+data and ticket data between 2009 and 2012. It finds there is no
+evidence of a significant safety benefit from the red light cameras.</p>
+<h3><a href="http://www.rajivshah.com/ShahChicagoCameras.pdf">Effectiveness
+of the Chicago Camera Network on Crime</a></h3>
+<p>This paper found the initial crime level of an area where a camera
+was placed had a significant effect. In areas with high crime, cameras
+were very effective in reducing crime. In other areas, the cameras had
+little effect in reducing crime. This exploratory research suggests
+fewer cameras in crime hotspots are much more effective than a wide
+diffuse camera dragnet.</p>
+<h3><a href="http://eyeingchicago.com/blog/2010/8/1/effectiveness-of-red-light-cameras-in-chicago-an-exploratory.html">Red
+Light Camera Study-2010</a></h3>
+<p>This report conducted an analysis on the effectiveness of red light
+camera using data obtained from the city of Chicago and the Illinois
+Department of Transportation (IDOT). We found accidents in Chicago fell
+between 2001 and 2008. In contrast, accidents at intersections with
+RLCs in our study actually increased. This result throws doubt on the
+city’s claims of significant accident reductions because of RLCs.
+Additionally, the data also shows that the share of accidents at
+traffic signals has stayed roughly constant. This suggests red light
+cameras are not reducing accidents throughout the city.</p>
+<hr>
 <h3><a name="About Us" class="anchor" href="#aboutus"><span class="octicon octicon-link"></span></a>About Us</h3>
-<p>We are a collaborative team led by <a href="http://www.RajivShah.com">Rajiv Shah</a> focusing on providing insights and visualizations based on Chicago data.</p>
-<p>If you are interested in  - then join us! We are always looking for more assistance.  Our team consists of people around the US, but mostly based in central Illinois and Chicago.  Team members are credited on each of the project pages.</p>
+<p>We are a collaborative team led by <a href="http://www.RajivShah.com">Rajiv Shah</a> focusing on providing
+insights and visualizations based on Chicago data.</p>
+<p>If you are interested in - then join us! We are always looking for
+more assistance. Our team consists of people around the US, but mostly
+based in central Illinois and Chicago. Team members are credited on
+each of the project pages.</p>
+<footer> </footer> </div>
+</div>
 
-
-
-       </section>
-
-        <footer>
-          
-          
-        </footer>
-
-        
-      </div>
-    </div>
-  </body>
-</html>
+</body></html>
